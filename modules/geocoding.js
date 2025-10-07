@@ -1,3 +1,5 @@
+const API_KEY = /* api_key from openweathermap.org */
+
 async function getCoordinates(city) {
     const url = `https://api.openweathermap.org/geo/1.0/direct?q=${encodeURIComponent(city)}&limit=1&appid=${API_KEY}`;
 
