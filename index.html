@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+
+<body>
+    <div class="card">
+        <div class="search" id="controls">
+            <input type="text" placeholder="Enter city name" spellcheck="false" id="inputCity">
+            <button id="search">🔍</button>
+        </div>
+        <div class="weather">
+            <div class="weather-icon">
+                <span id="conditionIco"></span>
+                <span class="weather-text" id="condition">Нет данных</span></div>
+            <h1 class="temperature" id="temperature">Нет данных</h1>
+            <h2 class="city" id="city">Нет данных</h2>
+            <div class="details">
+                <div class="col">
+                    💧
+                        <span class="humidity" id="humidity">Нет данных</span>
+                </div>
+                <div class="col">
+                    💨
+                        <span class="wind" id="wind">Нет данных</span>
+                </div>
+            </div>
+            <button id="autoUpdateBtn">Автообновление: ❌</button>
+        </div>
+    </div>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
